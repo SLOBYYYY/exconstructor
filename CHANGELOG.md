@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+Added recursive parsing for maps
+
 ## 1.0.2
 
 Fixed arity bug around `defoverride`.

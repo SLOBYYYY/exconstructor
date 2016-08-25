@@ -3,7 +3,7 @@ defmodule ExConstructor.Mixfile do
 
   def project do
     [app: :exconstructor,
-     version: "1.0.2",
+     version: "1.1.0",
      description: description,
      package: package,
      elixir: "~> 1.2",
@@ -11,7 +11,6 @@ defmodule ExConstructor.Mixfile do
      start_permanent: Mix.env == :prod,
      docs: [main: ExConstructor],
      test_coverage: [tool: ExCoveralls],
-     #test_coverage: [tool: Coverex.Task],
      deps: deps]
   end
 
@@ -25,9 +24,9 @@ defmodule ExConstructor.Mixfile do
 
   def package do
     [
-      maintainers: ["pete gamache", "Appcues"],
+      maintainers: ["Máj Szabolcs", "SLOBYYYY"],
       licenses: ["MIT"],
-      links: %{GitHub: "https://github.com/appcues/exconstructor"}
+      links: %{GitHub: "https://github.com/SLOBYYYY/exconstructor"}
     ]
   end
 
