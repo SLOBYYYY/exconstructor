@@ -176,7 +176,7 @@ defmodule ExConstructor do
           Map.get(struct, key)
       end
       value = 
-        if is_map(value) do
+        if is_map(value) and Map.has_key?(struct, key) and not is_nil(Map.get(struct, key)) do
           sub_struct = struct |> Map.get(key)
           sub_struct_keys = sub_struct |> Map.keys
           parse_map(sub_struct, value, sub_struct_keys, opts)
